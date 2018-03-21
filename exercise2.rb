@@ -9,7 +9,11 @@ fav_movies={black_panther: 2018, thor_ragnarok: 2017, the_shape_of_water: 2018}
 city_pop={toronto: "2.8 Million", mumbai: "21 Million", kyoto: "1.5 Million"}
 names= {alex: 24, alexa: 25, bob: 30, kevin:28}
 
+#ex1
 p heads
 puts fav_color[0]
 p age.sort
 p age.sort.push(0)
+p fav_movies[:thor_ragnarok]
+
+#ex2
