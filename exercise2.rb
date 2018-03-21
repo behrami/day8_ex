@@ -11,9 +11,26 @@ names= {alex: 24, alexa: 25, bob: 30, kevin:28}
 
 #ex1
 p heads
-puts fav_color[0]
+p fav_color[0]
 p age.sort
 p age.sort.push(0)
 p fav_movies[:thor_ragnarok]
 
 #ex2
+p fav_color[-1]
+
+city_pop[:vancouver]= "2.4 Million"
+p city_pop
+
+heads=heads.reverse
+p heads
+
+p city_pop[:mumbai]
+
+i=0
+while i<3
+  p "i think #{artist[i]} is great"
+  i+=1
+end
+
+#3
