@@ -160,3 +160,28 @@ p n_island
 p y_island
 
 #ex8
+exp = [250, 7.95, 30.95, 16.50]
+
+total=0
+i=0
+while i<exp.length
+  total+=exp[i]
+  i+=1
+end
+p total
+
+def new_array (array)
+  total=0
+  i=0
+  exp =[]
+  exp = array
+  while i<exp.length
+    total+=exp[i]
+    i+=1
+  end
+  return total
+end
+puts new_array([1,2,3,4])
+puts new_array([2,2,2,2])
+
+#ex9
