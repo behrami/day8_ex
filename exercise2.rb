@@ -101,7 +101,62 @@ movie_list = {"1999"=> ["The Matrix", "Star Wars: Episode 1", "The Mummy"], "200
 p movie_list
 phone= [[1,2,3],[4,5,6],[7,8,9],["*",0,"#"]]
 p phone
-country_info= [{name:"canada", continent:"NA", island:"not an island"},{name:"America", continent:"NA", island:"not a island"},{name:"australia", continent:"OCX", island:"is an island"} ]
+country_info= [{name:"canada", continent:"NA", island:"no"},{name:"America", continent:"NA", island:"no"},{name:"australia", continent:"OCX", island:"yes"} ]
 p country_info
 
 #ex7
+i=0
+while i<20
+  puts "I will not skateboard in the halls"
+  i+=1
+end
+
+i=0
+ex6= []
+while i<20
+  ex6.push( "I will not skateboard in the halls")
+  i+=1
+end
+p ex6
+
+array_num= []
+i=1
+while i<=50
+  array_num.push(i)
+  i+=1
+end
+p array_num
+
+total_sum=0
+array_num.each do |value|j=0
+  total_sum += value
+end
+p total_sum
+
+three_each=[]
+i=1
+while i<=50
+  j = 0
+  while j < 3
+    three_each.push(i)
+    j += 1
+  end
+  i+=1
+end
+p three_each
+
+n_island = []
+y_island = []
+i=0
+while i< country_info.length
+  if country_info[i][:island] == "no"
+    n_island.push(country_info[i][:name])
+  elsif country_info[i][:island] == "yes"
+    y_island.push(country_info[i][:name])
+  end
+  i+=1
+end
+p n_island
+p y_island
+
+#ex8
