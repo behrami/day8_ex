@@ -1,5 +1,5 @@
 fav_color= ["black", "red", "blue"]
-age = [23, 24 ,25, 20]
+age = [24, 23 ,25, 20]
 heads = [true, true, false, true, false]
 artist= ["lil pump", "skrillex", "drake"]
 fav_color_sym = [:black, :red, :blue]
@@ -33,4 +33,38 @@ while i<3
   i+=1
 end
 
-#3
+#ex3
+age=age.sort.reverse
+p age
+
+fav_movies[:beauty_and_the_beast]= [1991,2017]
+p fav_movies
+
+#ex4
+i=0
+while i<=age.length-1
+  if age[i]<24
+    p age[i]
+  end
+  i +=1
+end
+
+p age.max
+
+i=0
+flipped = 0
+while i<=heads.length-1
+  if heads[i]==true
+    flipped += 1
+  end
+  i +=1
+end
+p "cout of flipped is #{flipped}"
+
+artist.delete("skrillex")
+p artist
+
+city_pop[:vancouver]= "650,000"
+p city_pop
+
+#ex5
