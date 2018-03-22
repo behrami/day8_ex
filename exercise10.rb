@@ -25,11 +25,16 @@ puts
 puts students.keys
 puts
 
-def percent_co(students, num_percent)
+def percent_co(students)
   students.each do |k,v|
-    v=v*num_percent
+    students[k]=v*1.05
   end
-  return students
+  #return students
 end
 
-display_co(percent_co(students, 0.05))
+display_co(percent_co(students))
+display_co(students)
+
+
+students.delete(:cohort2)
+display_co(students)
