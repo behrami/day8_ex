@@ -236,10 +236,3 @@ def delete_item(grocery_list, item)
   end
 
   delete_item(grocery_list, "salmon")
-
-#ex10
-students = {
-  :cohort1 => 34,
-  :cohort2 => 42,
-  :cohort3 => 22
-}
