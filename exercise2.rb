@@ -185,3 +185,61 @@ puts new_array([1,2,3,4])
 puts new_array([2,2,2,2])
 
 #ex9
+grocery_list = ["carrots", "toilet paper", "apples", "salmon"]
+
+def display_list(grocery_list)
+  i=0
+  while i<grocery_list.length
+    puts "* #{grocery_list[i]}"
+    i+=1
+  end
+end
+
+puts display_list(grocery_list)
+
+
+def add_list(grocery_list,item)
+  grocery_list.push(item)
+end
+
+ add_list(grocery_list,"rice")
+ puts display_list(grocery_list)
+
+def num_list(grocery_list)
+  return grocery_list.length;
+end
+
+puts num_list(grocery_list)
+
+def check_list(grocery_list, item)
+  if grocery_list.include?(item)
+    puts "u dont need bananas"
+  else
+    puts "u need bananas"
+  end
+end
+
+  check_list(grocery_list, "bananas")
+
+  puts grocery_list[1]
+
+  def display_list_order(grocery_list)
+    display_list(grocery_list.sort!)
+  end
+
+  display_list_order(grocery_list)
+puts
+
+def delete_item(grocery_list, item)
+    grocery_list.delete(item)
+    display_list(grocery_list)
+  end
+
+  delete_item(grocery_list, "salmon")
+
+#ex10
+students = {
+  :cohort1 => 34,
+  :cohort2 => 42,
+  :cohort3 => 22
+}
